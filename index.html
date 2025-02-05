@@ -36,6 +36,59 @@
             </div>
         </div>
     </nav>
+
+    <!--Kuvakaruselli, jossa näkyy kuvia matkakohteista-->
+    <div class="carousel slide" data-bs-ride="carousel" id="travelDestinationCarousel">
+
+        <!--Kuvakarusellin kuvien indikaattorit-->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#travelDestinationCarousel" data-bs-slide-to="0"
+                class="active"></button>
+            <button type="button" data-bs-target="#travelDestinationCarousel" data-bs-slide-to="1"
+                class="active"></button>
+            <button type="button" data-bs-target="#travelDestinationCarousel" data-bs-slide-to="1"
+                class="active"></button>
+        </div>
+
+        <!--Kuvakarusellin kuvat-->
+        <div class="carousel-inner">
+            <div class="carousel-item active img-fluid">
+                <img src="images/gokyo-ri-4692458_1920.jpg" class="d-block w-100"
+                    alt="View to the Himalayas in Gokyo Ri, Nepal">
+                <div class="carousel-caption">
+                    <h3>Destination</h3>
+                    <h1>Gokyo Ri, Nepal</h1>
+                </div>
+            </div>
+            <div class="carousel-item img-fluid">
+                <img src="images/kaohsiung-4081259_1920.jpg" class="d-block w-100"
+                    alt="Traditional temple in Kaohsiung, Taiwan">
+                <div class="carousel-caption">
+                    <h3>Destination</h3>
+                    <h1>Kaohsiung, Taiwan</h1>
+                </div>
+            </div>
+            <div class="carousel-item img-fluid">
+                <img src="images/phra-nakhon-si-ayutthaya-1822502_1920.jpg" class="d-block w-100"
+                    alt="Sunset at Phra nakhon si ayutthaya lagoon, Thailand">
+                <div class="carousel-caption">
+                    <h3>Destination</h3>
+                    <h1>Phra nakhon si ayutthaya, Thailand</h1>
+                </div>
+            </div>
+        </div>
+
+        <!--Kuvakarusellin kuvien ohjauspainikkeet-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#travelDestinationCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#travelDestinationCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
     <!--Tuodaan Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
