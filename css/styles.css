@@ -1,0 +1,24 @@
+.carousel-inner > .carousel-item > img {
+  height: 50vh;
+  width: 80vw;
+  margin: auto;
+}
+
+.carousel-inner {
+  height: 50vh;
+  width: 80vw;
+  margin: auto;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+ .carousel-control-prev {
+    left: 5vw;
+    right: auto;
+ }
+ .carousel-control-next {
+    left: auto;
+    right: 5vw;
+ }
