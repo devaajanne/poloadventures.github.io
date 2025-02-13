@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polo adventures: destinations</title>
+
+    <!--Tuodaan Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Tuodaan oma CSS-tyylimäärittely-->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navigointi alkaa-->
+    <nav class="navbar navbar-expand-md navbar-light bg-dark static-top">
+        <div class="container-fluid">
+
+            <!--Sivuston nimi ja linkki, joka vie etusivulle-->
+            <h1><a class="navbar-brand text-white" href="index.html">Polo adventures</a></h1>
+
+            <!--Nappi hampurilaisvalikolle, näkyy keskisuurilla ruuduilla-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible-navbar">
+                <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+
+            <!--Navigointilinkit, näkyvät isoilla ruuduilla-->
+            <!--Muuttuu hampurilaisvalikoksi keskisuurilla(md) näytöillä-->
+            <div class="collapse navbar-collapse" id="collapsible-navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <h5><a class="nav-link text-white" href="index.html">Home</a></h5>
+                    </li>
+                    <li class="nav-item">
+                        <h5><a class="nav-link text-white" href="about.html">About</a></h5>
+                    </li>
+                    <li class="nav-item">
+                        <h5><a class="nav-link text-white" href="destinations.html">Destinations</a></h5>
+                    </li>
+                    <li class="nav-item">
+                        <h5><a class="nav-link text-white" href="qanda.html">Q&A</a></h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navigointi päättyy-->
+
+    <!--Grid, joka pitää sisällään kortteja-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Our destinations</h1>
+            </div>
+        </div>
+        <!--Kortit alkavat tästä-->
+        <div class="row">
+            <!-- d-flex align-items-stretch tekee korteista yhtä korkeat responsiivisesti-->
+            <div class="col-sm-4  d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/gokyo-ri-4692458_1920.jpg" class="d-block w-100"
+                            alt="View to the Himalayas in Gokyo Ri, Nepal">
+                        <h4 class="card-title">Gokyo Ri</h4>
+                        <h6>Nepal</h6>
+                        <p class="card-text">Admire the breath-taking views over the Nepalese mountains.</p>
+                        <p class="card-text">Perfect for courageous adventurers not afraid of heights!</p>
+                        <p class="card-text"><strong>2 000 € per person</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4  d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/kaohsiung-4081259_1920.jpg" class="d-block w-100"
+                            alt="Traditional temple in Kaohsiung, Taiwan">
+                        <h4 class="card-title">Kaohsiung</h4>
+                        <h6>Taiwan</h6>
+                        <p class="card-text">Visit a traditional temple in Kaohsiung for calming break from the modern
+                            life.</p>
+                        <p class="card-text">Perfect for enjoyers of zen, yin and yang - peace and quiet.</p>
+
+                        <p class="card-text"><strong>750 € per person</strong></p>
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                            data-bs-target="#taiwanOfferModal">Special offer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4  d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/phra-nakhon-si-ayutthaya-1822502_1920.jpg" class="d-block w-100"
+                            alt="Sunset at Phra nakhon si ayutthaya lagoon, Thailand">
+                        <h4 class="card-title">Phra nakhon si ayutthaya</h4>
+                        <h6>Thailand</h6>
+                        <p class="card-text">Enjoy a sunset at the mesmerizing lagoon of Phra nakhon si ayutthaya.</p>
+                        <p class="card-text">Perfect for sunset romantics and beachgoers alike.</p>
+                        <p class="card-text"><strong>1 000 € per person</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Kortit päättyvät-->
+
+    <!--Määritellään modaali, joka avautuu nappia painamalla-->
+    <div class="modal fade" id="taiwanOfferModal" role="dialog">
+        <div class="modal-dialog">
+            <!--Modaalin sisältö alkaa-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Special offer!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>With the coupon code</p>
+                    <h5>TAIWAN20</h5>
+                    <p>save 20 % off your next Kaohsiung meditation trip!</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!--Modaalin sisältö päättyy-->
+        </div>
+    </div>
+
+    <!--Tässä on taulukko, jossa vertaillaan eri matkakohteita ja -paketteja. Taulukko on piilossa haitarin sisällä-->
+    <!--Määritellään ensin grid, jotta taulukko on yhtä leveä kuin yllä olevat kuvat-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!--Tästä alkaa haitari-->
+                <div class="accordion" id="destinationaccordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="headerOne">
+                            <button class="accordion-button collapsed d-block text-center" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                aria-controls="collapseOne">
+                                <h2>Click to compare our destinations</h2>
+                            </button>
+                        </div>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headerOne"
+                            data-bs-parent="#destinationaccordion">
+                            <div class="accordion-body">
+                                <!--Tästä alkaa taulukko-->
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Destination</th>
+                                                <th>Country</th>
+                                                <th>Activities</th>
+                                                <th>Accommodation</th>
+                                                <th>Price per person</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Gokyo Ri</td>
+                                                <td>Nepal</td>
+                                                <td>Mountain climbing</td>
+                                                <td>Traditional yurts</td>
+                                                <td>2 000 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kaohsiung</td>
+                                                <td>Taiwan</td>
+                                                <td>Meditation</td>
+                                                <td>Temple lodging</td>
+                                                <td>750 € <button type="button" class="btn btn-info"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#taiwanOfferModal">Special offer</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Phra nakhon si ayutthaya</td>
+                                                <td>Thailand</td>
+                                                <td>Beach, stargazing</td>
+                                                <td>Beach bungalows</td>
+                                                <td>1 000€</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Taulukko päättyy tähän-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Haitari päättyy tähän-->
+            </div>
+        </div>
+    </div>
+
+    <!--Lopuksi linkki Q&A-sivulle-->
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h2>Questions about practicalities? See our <a href="qanda.html">Q&A</a>-section!</h2>
+        </div>
+    </div>
+
+    <!--Footer alkaa-->
+    <footer class="footer p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Polo adventures</h2>
+                </div>
+                <div class="col-md-3">
+                    <h5>About us</h5>
+                    <p>Polo Adventures is a modern travel agency that focuses on quality, hand-picked featured
+                        destinations.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contact us</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: service@poloadventures.com</li>
+                        <li>Phone: +123 4567890</li>
+                        <li>Address: Path Street 1, 00100 Trail City, Travel Land</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer päättyy-->
+
+    <!--Tuodaan Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
