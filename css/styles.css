@@ -1,12 +1,6 @@
 .carousel-inner > .carousel-item > img {
-  height: 50vh;
-  width: 80vw;
-  margin: auto;
-}
-
-.carousel-inner {
-  height: 50vh;
-  width: 80vw;
+  height: 25%;
+  width: 100%;
   margin: auto;
 }
 
@@ -14,11 +8,16 @@
   text-align: center;
 }
 
- .carousel-control-prev {
-    left: 5vw;
-    right: auto;
- }
- .carousel-control-next {
-    left: auto;
-    right: 5vw;
- }
+.carousel-control-prev {
+  left: 1vw;
+  right: auto;
+}
+.carousel-control-next {
+  left: auto;
+  right: 1vw;
+}
+
+a:link {
+  color: blue;
+  text-decoration: underline;
+}
