@@ -15,14 +15,16 @@
 
 <body>
     <!--Navigointi alkaa-->
-    <nav class="navbar navbar-expand-md navbar-light bg-dark static-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-dark static-top" role="navigation">
         <div class="container-fluid">
 
             <!--Sivuston nimi ja linkki, joka vie etusivulle-->
-            <h1><a class="navbar-brand text-white" href="index.html">Polo adventures</a></h1>
+            <a class="navbar-brand text-white" href="index.html"><span aria-label="Polo Adventures homepage"></span>Polo
+                adventures</a>
 
             <!--Nappi hampurilaisvalikolle, näkyy keskisuurilla ruuduilla-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible-navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible-navbar"
+                aria-controls="collapsible-navbar" aria-expanded="false" aria-label="Navigation bar">
                 <span class="navbar-toggler-icon bg-light"></span>
             </button>
 
@@ -37,7 +39,8 @@
                         <h5><a class="nav-link text-white" href="about.html">About</a></h5>
                     </li>
                     <li class="nav-item">
-                        <h5><a class="nav-link text-white" href="destinations.html">Destinations</a></h5>
+                        <h5><a class="nav-link text-white" href="destinations.html" aria-current="page">Destinations</a>
+                        </h5>
                     </li>
                     <li class="nav-item">
                         <h5><a class="nav-link text-white" href="qanda.html">Q&A</a></h5>
@@ -86,7 +89,8 @@
 
                         <p class="card-text"><strong>750 € per person</strong></p>
                         <button type="button" class="btn btn-info" data-bs-toggle="modal"
-                            data-bs-target="#taiwanOfferModal">Special offer</button>
+                            data-bs-target="#taiwanOfferModal"
+                            aria-label="View special offer for Kaohsiung trip">Special offer</button>
                     </div>
                 </div>
             </div>
@@ -109,12 +113,12 @@
     <!--Kortit päättyvät-->
 
     <!--Määritellään modaali, joka avautuu nappia painamalla-->
-    <div class="modal fade" id="taiwanOfferModal" role="dialog">
+    <div class="modal fade" id="taiwanOfferModal" role="dialog" aria-labelledby="taiwanOfferLabel" aria-hidden="true">
         <div class="modal-dialog">
             <!--Modaalin sisältö alkaa-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Special offer!</h4>
+                    <h4 class="modal-title" id="taiwanOfferLabel">Special offer!</h4>
                 </div>
                 <div class="modal-body">
                     <p>With the coupon code</p>
@@ -122,7 +126,8 @@
                     <p>save 20 % off your next Kaohsiung meditation trip!</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        aria-label="Close the offer">Close</button>
                 </div>
             </div>
             <!--Modaalin sisältö päättyy-->
@@ -150,7 +155,8 @@
                             <div class="accordion-body">
                                 <!--Tästä alkaa taulukko-->
                                 <div class="table-responsive">
-                                    <table class="table table-bordered">
+                                    <table class="table table-bordered"
+                                        aria-details="Comparison table of destinations, including activities, accommodations, and prices.">
                                         <thead>
                                             <tr>
                                                 <th>Destination</th>
@@ -174,8 +180,9 @@
                                                 <td>Meditation</td>
                                                 <td>Temple lodging</td>
                                                 <td>750 € <button type="button" class="btn btn-info"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#taiwanOfferModal">Special offer</button></td>
+                                                        data-bs-toggle="modal" data-bs-target="#taiwanOfferModal"
+                                                        aria-label="Special offer for Taiwan">Special offer</button>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>Phra nakhon si ayutthaya</td>
@@ -200,12 +207,13 @@
     <!--Lopuksi linkki Q&A-sivulle-->
     <div class="row">
         <div class="col-sm-12 text-center">
-            <h2>Questions about practicalities? See our <a href="qanda.html">Q&A</a>-section!</h2>
+            <h2>Questions about practicalities? See our <a href="qanda.html"
+                    aria-label="View questins and answers about Polo Adventure trips">Q&A</a>-section!</h2>
         </div>
     </div>
 
     <!--Footer alkaa-->
-    <footer class="footer p-5">
+    <footer class="footer p-5" role="contentinfo">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -219,7 +227,7 @@
                 <div class="col-md-6">
                     <h5>Contact us</h5>
                     <ul class="list-unstyled">
-                        <li>Email: service@poloadventures.com</li>
+                        <li>Email: <a href="mailto:service@poloadventures.com">service@poloadventures.com</a></li>
                         <li>Phone: +123 4567890</li>
                         <li>Address: Path Street 1, 00100 Trail City, Travel Land</li>
                     </ul>

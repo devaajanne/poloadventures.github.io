@@ -15,14 +15,16 @@
 
 <body>
     <!--Navigointi alkaa-->
-    <nav class="navbar navbar-expand-md navbar-light bg-dark static-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-dark static-top" role="navigation">
         <div class="container-fluid">
 
             <!--Sivuston nimi ja linkki, joka vie etusivulle-->
-            <h1><a class="navbar-brand text-white" href="index.html">Polo adventures</a></h1>
+            <a class="navbar-brand text-white" href="index.html"><span aria-label="Polo Adventures homepage"></span>Polo
+                adventures</a>
 
             <!--Nappi hampurilaisvalikolle, näkyy keskisuurilla ruuduilla-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible-navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible-navbar"
+                aria-controls="collapsible-navbar" aria-expanded="false" aria-label="Navigation bar">
                 <span class="navbar-toggler-icon bg-light"></span>
             </button>
 
@@ -34,7 +36,7 @@
                         <h5><a class="nav-link text-white" href="index.html">Home</a></h5>
                     </li>
                     <li class="nav-item">
-                        <h5><a class="nav-link text-white" href="about.html">About</a></h5>
+                        <h5><a class="nav-link text-white" href="about.html" aria-current="page">About</a></h5>
                     </li>
                     <li class="nav-item">
                         <h5><a class="nav-link text-white" href="destinations.html">Destinations</a></h5>
@@ -68,14 +70,15 @@
                     travel plans have been tested by our staff themselves! This is why we feel comfortable in offering
                     these destinations for you!</p>
                 <p>Click below to get to know our featured destinations!</p>
-                <h2>See all our destinations here: <a href="destinations.html">Polo adventure destinations</a></h2>
+                <h2>See all our destinations here: <a href="destinations.html"
+                        aria-label="View all Polo Adventure destinations">Polo adventure destinations</a></h2>
             </div>
         </div>
     </div>
     <!--Ruudukko päättyy-->
 
     <!--Footer alkaa-->
-    <footer class="footer p-5">
+    <footer class="footer p-5" role="contentinfo">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -89,7 +92,7 @@
                 <div class="col-md-6">
                     <h5>Contact us</h5>
                     <ul class="list-unstyled">
-                        <li>Email: service@poloadventures.com</li>
+                        <li>Email: <a href="mailto:service@poloadventures.com">service@poloadventures.com</a></li>
                         <li>Phone: +123 4567890</li>
                         <li>Address: Path Street 1, 00100 Trail City, Travel Land</li>
                     </ul>

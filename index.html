@@ -15,14 +15,16 @@
 
 <body>
     <!--Navigointi alkaa-->
-    <nav class="navbar navbar-expand-md navbar-light bg-dark static-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-dark static-top" role="navigation">
         <div class="container-fluid">
 
             <!--Sivuston nimi ja linkki, joka vie etusivulle-->
-            <h1><a class="navbar-brand text-white" href="index.html">Polo adventures</a></h1>
+            <a class="navbar-brand text-white" href="index.html"><span aria-label="Polo Adventures homepage"></span>Polo
+                adventures</a>
 
             <!--Nappi hampurilaisvalikolle, näkyy keskisuurilla ruuduilla-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible-navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible-navbar"
+                aria-controls="collapsible-navbar" aria-expanded="false" aria-label="Navigation bar">
                 <span class="navbar-toggler-icon bg-light"></span>
             </button>
 
@@ -31,7 +33,7 @@
             <div class="collapse navbar-collapse" id="collapsible-navbar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <h5><a class="nav-link text-white" href="index.html">Home</a></h5>
+                        <h5><a class="nav-link text-white" href="index.html" aria-current="page">Home</a></h5>
                     </li>
                     <li class="nav-item">
                         <h5><a class="nav-link text-white" href="about.html">About</a></h5>
@@ -55,16 +57,17 @@
             <div class="col-md-12">
 
                 <!--Kuvakaruselli alkaa tästä-->
-                <div class="carousel slide" data-bs-ride="carousel" id="travelDestinationCarousel">
+                <div class="carousel slide" data-bs-ride="carousel" id="travelDestinationCarousel"
+                    aria-label="Travel Destination Carousel">
 
                     <!--Kuvakarusellin kuvien indikaattorit-->
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#travelDestinationCarousel" data-bs-slide-to="0"
-                            class="active"></button>
+                            class="active" aria-label="Image 1"></button>
                         <button type="button" data-bs-target="#travelDestinationCarousel" data-bs-slide-to="1"
-                            class="active"></button>
+                            aria-label="Image 2"></button>
                         <button type="button" data-bs-target="#travelDestinationCarousel" data-bs-slide-to="2"
-                            class="active"></button>
+                            aria-label="Image 3"></button>
                     </div>
 
                     <!--Kuvakarusellin kuvat-->
@@ -92,11 +95,11 @@
 
                     <!--Kuvakarusellin kuvien ohjauspainikkeet-->
                     <button class="carousel-control-prev" type="button" data-bs-target="#travelDestinationCarousel"
-                        data-bs-slide="prev">
+                        data-bs-slide="prev" aria-label="Previous slide">
                         <span class="carousel-control-prev-icon"></span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#travelDestinationCarousel"
-                        data-bs-slide="next">
+                        data-bs-slide="next" aria-label="Next slide">
                         <span class="carousel-control-next-icon"></span>
                     </button>
                 </div>
@@ -116,20 +119,20 @@
         </div>
         <div class="row">
             <div class="col-md-4 text-center">
-                <h3><a href="about.html">About</a></h3>
+                <h3><a href="about.html" aria-label="Learn more about Polo Adventures">About</a></h3>
             </div>
             <div class="col-md-4 text-center">
-                <h3><a href="destinations.html">Destinations</a></h3>
+                <h3><a href="destinations.html" aria-label="Explore our travel destinations">Destinations</a></h3>
             </div>
             <div class="col-md-4 text-center">
-                <h3><a href="qanda.html">Q&A</a></h3>
+                <h3><a href="qanda.html" aria-label="Find answers to common questions">Q&A</a></h3>
             </div>
         </div>
     </div>
     <!--Ruudukko päättyy-->
 
     <!--Footer alkaa-->
-    <footer class="footer p-5">
+    <footer class="footer p-5" role="contentinfo">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -143,7 +146,7 @@
                 <div class="col-md-6">
                     <h5>Contact us</h5>
                     <ul class="list-unstyled">
-                        <li>Email: service@poloadventures.com</li>
+                        <li>Email: <a href="mailto:service@poloadventures.com">service@poloadventures.com</a></li>
                         <li>Phone: +123 4567890</li>
                         <li>Address: Path Street 1, 00100 Trail City, Travel Land</li>
                     </ul>
